@@ -11,7 +11,7 @@ class Solution():
             go[i[0]-1][i[1]-1] = 1
             go[i[1]-1][i[0]-1] = 1
         #print(go)
-        for i in range(1,(1<<8)-1):
+        for i in range(1,(1<<8)):
             good = 1
             for j in range(0, 8):
                 if (i & (1 << j))>0:
